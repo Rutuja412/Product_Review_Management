@@ -10,7 +10,7 @@ namespace Product_Review_Management
             Console.WriteLine("Welcome to Produdct Review Management");
             List<ProductReview> productReviewList = new List<ProductReview>()
             {
-            new ProductReview(){ProductID=1,UserID=1,Rating=1,Review="Bad",Islike=false},
+            new ProductReview(){ProductID=1,UserID=1,Rating=8,Review="Good",Islike=true},
             new ProductReview(){ProductID=2,UserID=1,Rating=2,Review="Average",Islike=false},
             new ProductReview(){ProductID=3,UserID=2,Rating=3,Review="Average",Islike=false},
             new ProductReview(){ProductID=4,UserID=1,Rating=4,Review="Good",Islike=true},
@@ -36,10 +36,14 @@ namespace Product_Review_Management
             new ProductReview(){ProductID=24,UserID=10,Rating=4,Review="Good",Islike=true},
             new ProductReview(){ProductID=25,UserID=10,Rating=5,Review="Excellent",Islike=true},
             };
-            foreach (var list in productReviewList)
-            {
-                Console.WriteLine("ProductID :" + list.ProductID + "  " + "UserID :" + list.UserID + "  " + "Rating :" + list.Rating + "  " + "Review :" + list.Review + "  " + "isLike :" + list.Islike);
-            }
+            //foreach (var list in productReviewList)
+            //{
+            //    Console.WriteLine("ProductID :" + list.ProductID + "  " + "UserID :" + list.UserID + "  " + "Rating :" + list.Rating + "  " + "Review :" + list.Review + "  " + "isLike :" + list.Islike);
+            //}
+            Management management = new Management();
+            //UC2
+           management.Top3Records(productReviewList);
+            
 
         }
     }
