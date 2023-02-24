@@ -41,5 +41,15 @@ namespace Product_Review_Management
 
             }
         }
+        public void RetriveproductIDAndReviewFromList(List<ProductReview> productReviewList)
+        {
+            var data = (from productReview in productReviewList
+                        select new { ProductID = productReview.ProductID, Review = productReview.Review });
+            Console.WriteLine("Product ID|Review");
+            foreach (var list in data)
+            {
+                Console.WriteLine(list.ProductID + "--" + list.Review);
+            }
+        }
     }
 }
