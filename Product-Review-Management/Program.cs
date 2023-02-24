@@ -47,8 +47,10 @@ namespace Product_Review_Management
             // management.RetriveRecords(productReviewList);
             //uc4
             //  management.RetrieveCountOfRecords(productReviewList);
-            management.RetriveproductIDAndReviewFromList(productReviewList);
-
+            //uc5
+           // management.RetriveproductIDAndReviewFromList(productReviewList);
+            //Uc6
+            management.SkipTop5Records(productReviewList);
 
         }
     }
