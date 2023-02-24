@@ -42,8 +42,10 @@ namespace Product_Review_Management
             //}
             Management management = new Management();
             //UC2
-           management.Top3Records(productReviewList);
-            
+         //  management.Top3Records(productReviewList);
+            //uc3
+            management.RetriveRecords(productReviewList);
+
 
         }
     }
