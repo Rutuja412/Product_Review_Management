@@ -44,7 +44,9 @@ namespace Product_Review_Management
             //UC2
          //  management.Top3Records(productReviewList);
             //uc3
-            management.RetriveRecords(productReviewList);
+           // management.RetriveRecords(productReviewList);
+            //uc4
+            management.RetrieveCountOfRecords(productReviewList);
 
 
         }
